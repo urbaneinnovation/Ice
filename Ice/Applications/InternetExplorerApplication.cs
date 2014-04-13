@@ -13,7 +13,7 @@ using Ice.Interfaces.Elements;
 
 namespace Ice.Applications
 {
-    public class InternetExplorerApplication : Application, IInternetExplorerApplication
+    public class InternetExplorerApplication : WindowsApplication, IInternetExplorerApplication
     {
         private string windowIdentifier;
         private bool isURL;

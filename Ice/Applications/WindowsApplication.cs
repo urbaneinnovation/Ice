@@ -12,7 +12,7 @@ using Ice.Interfaces.Elements;
 
 namespace Ice.Applications
 {
-    public class Application : IApplication
+    public class WindowsApplication : IWindowsApplication
     {
         private string applicationIdentifier;
         private bool startedFromFilePath;
@@ -29,7 +29,7 @@ namespace Ice.Applications
         /// was started from a file path, or found by searching window
         /// titles.
         /// </param>
-        internal Application(string applicationIdentifier, bool startedFromFilePath)
+        internal WindowsApplication(string applicationIdentifier, bool startedFromFilePath)
         {
             this.applicationIdentifier = applicationIdentifier;
             this.startedFromFilePath = startedFromFilePath;
@@ -41,7 +41,7 @@ namespace Ice.Applications
             }
         }
 
-        internal Application(Regex windowTitleRegex)
+        internal WindowsApplication(Regex windowTitleRegex)
         {
             this.startedFromFilePath = false;
             this.foundByRegex = true;

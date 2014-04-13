@@ -125,7 +125,7 @@
     <Compile Include="DescendantHandlers\InternetExplorerDescendantHandler.cs" />
     <Compile Include="DescendantHandlers\JavaDescendantHandler.cs" />
     <Compile Include="DescendantHandlers\WindowsDescendantHandler.cs" />
-    <Compile Include="Applications\Application.cs" />
+    <Compile Include="Applications\WindowsApplication.cs" />
     <Compile Include="Applications\InternetExplorerApplication.cs" />
     <Compile Include="Attributes\IceScript.cs" />
     <Compile Include="Elements\IceElement.cs" />
@@ -148,7 +148,7 @@
     </Compile>
     <Compile Include="Script.cs" />
     <Compile Include="Interfaces\DescendantHandlers\IElementDescendantHandler.cs" />
-    <Compile Include="Interfaces\Applications\IApplication.cs" />
+    <Compile Include="Interfaces\Applications\IWindowsApplication.cs" />
     <Compile Include="Interfaces\Applications\IInternetExplorerApplication.cs" />
     <Compile Include="Interfaces\Elements\IElement.cs" />
     <Compile Include="Interfaces\ActionHandlers\IElementActionHandler.cs" />
@@ -198,7 +198,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ActionHandlers\Controls\" />
     <Folder Include="ActionHandlers\Java\" />
   </ItemGroup>
   <ItemGroup>

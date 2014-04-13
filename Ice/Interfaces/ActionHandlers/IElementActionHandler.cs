@@ -46,7 +46,7 @@ namespace Ice.Interfaces.ActionHandlers
         /// Allows the user to get the base element wrapped by Ice in the event
         /// that the user needs it for functionality not implemented by Ice.
         /// </summary>
-        /// <param name="element">Base element.</param>
+        /// <param name="element">Base element</param>
         /// <returns></returns>
         Type ExposeCardinalElement(out object element);
     }

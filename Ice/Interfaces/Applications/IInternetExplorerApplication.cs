@@ -4,7 +4,7 @@ using Ice.Interfaces.Elements;
 
 namespace Ice.Interfaces.Applications
 {
-    public interface IInternetExplorerApplication : IApplication
+    public interface IInternetExplorerApplication : IWindowsApplication
     {
         /// <summary>
         /// Exposes the base Internet Explorer IElement to access
@@ -17,10 +17,10 @@ namespace Ice.Interfaces.Applications
         //IElement BaseInternetExplorerIElement { get; }
 
         /// <summary>
-        /// 
+        /// Gets an IElement by its HTML "id" property.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The element's "id" property</param>
+        /// <returns>The matching IElement</returns>
         IElement GetElementByID(string id);
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Ice.Interfaces.Applications
         /// <summary>
         /// Navigates to the provided URL.
         /// </summary>
-        /// <param name="url"></param>
+        /// <param name="url">URL to navigate to</param>
         void NavigateToURL(string url);
 
         /// <summary>

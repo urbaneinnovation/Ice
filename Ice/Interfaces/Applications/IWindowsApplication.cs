@@ -6,7 +6,7 @@ using Ice.Interfaces.Elements;
 
 namespace Ice.Interfaces.Applications
 {
-    public interface IApplication : IDisposable
+    public interface IWindowsApplication : IDisposable
     {
         /// <summary>
         /// Exposes the class' base IElement for handling.
@@ -21,7 +21,7 @@ namespace Ice.Interfaces.Applications
         /// <summary>
         /// Start application with arguments.
         /// </summary>
-        /// <param name="args">Arguments.</param>
+        /// <param name="args">Arguments</param>
         void StartApplication(string args);
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Ice.Interfaces.Applications
         IntPtr GetWindowHandle();
 
         /// <summary>
-        /// Returns the 
+        /// Returns the process' HWND.
         /// </summary>
         /// <returns></returns>
         int GetHWND();

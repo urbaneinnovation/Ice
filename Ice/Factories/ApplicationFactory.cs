@@ -15,9 +15,9 @@ namespace Ice.Factories
         /// </summary>
         /// <param name="filePath">File path to find executable.</param>
         /// <returns>IApplication representing the application.</returns>
-        public static IApplication InitializeNewApplicationFromFilePath(string filePath)
+        public static IWindowsApplication InitializeNewApplicationFromFilePath(string filePath)
         {
-            return new Application(filePath, true);
+            return new WindowsApplication(filePath, true);
         }
 
         /// <summary>
@@ -26,9 +26,9 @@ namespace Ice.Factories
         /// </summary>
         /// <param name="windowTitle">Application title</param>
         /// <returns>IApplication representing the application.</returns>
-        public static IApplication GetExistingApplicationFromWindowTitle(string windowTitle)
+        public static IWindowsApplication GetExistingApplicationFromWindowTitle(string windowTitle)
         {
-            return new Application(windowTitle, false);
+            return new WindowsApplication(windowTitle, false);
         }
 
         /// <summary>
@@ -37,9 +37,9 @@ namespace Ice.Factories
         /// </summary>
         /// <param name="windowTitleRegex">Regex to match against window title</param>
         /// <returns>IApplication representing the application.</returns>
-        public static IApplication GetExistingApplicationFromWindowTitle(Regex windowTitleRegex)
+        public static IWindowsApplication GetExistingApplicationFromWindowTitle(Regex windowTitleRegex)
         {
-            return new Application(windowTitleRegex);
+            return new WindowsApplication(windowTitleRegex);
         }
 
         /// <summary>
